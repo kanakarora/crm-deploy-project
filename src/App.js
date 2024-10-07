@@ -97,8 +97,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<AdminLayout />}>
-          <Route path="/project-overview" element={<ProjectsOverview />} />
+        <Route path = "/" element={<AdminLayout />}>
+          <Route index element={<ProjectsOverview />} />
           <Route path="/new-ticket" element={<NewTicket />} />
           <Route path="/task" element={<Task />} />
           <Route path="/addrole" element={<AddRole />} />

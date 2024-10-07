@@ -98,14 +98,14 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path = "/" element={<AdminLayout />}>
-          <Route index element={<ProjectsOverview />} />
+          <Route index element={<StaffMenu />} />
           <Route path="/new-ticket" element={<NewTicket />} />
           <Route path="/task" element={<Task />} />
           <Route path="/addrole" element={<AddRole />} />
           <Route path="/role" element={<Role />} />
           <Route path="/editrole" element={<EditRole />} />
           <Route path="/editdepartment" element={<EditDepartment />} />
-          <Route path="/staff-menu" element={<StaffMenu />} />
+          {/* <Route path="/staff-menu" element={<StaffMenu />} /> */}
           <Route path="/add-one-staff" element={<AddOneStaff />} />
           <Route path="/department" element={<Department />} />
           <Route path="/salary_Details" element={<Salary_Details />} />
